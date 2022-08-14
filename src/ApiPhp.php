@@ -3,7 +3,7 @@
 namespace Bitocredit\PhpGateway;
 
 
-class Api implements BitocreditInterface
+class ApiPhp implements BitocreditInterface
 {
 
     use Request;
