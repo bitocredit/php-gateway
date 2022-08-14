@@ -46,6 +46,6 @@ trait Request
 
     function hasAuth($auth, $url)
     {
-        return $auth ? $this->baseURL . $url . $this->token : $baseURL . $url;
+        return $auth ? $this->baseURL . $url . $this->token : $this->baseURL . $url;
     }
 }
