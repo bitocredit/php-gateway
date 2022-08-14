@@ -1,5 +1,5 @@
-<p align="center" >Bitocredit PHP Library</p>
-<p>This library used for integrate with bitocredit api</p>
+<h3 align="center" >Bitocredit PHP Library</h3>
+<h5>This library used for integrate with bitocredit api</h5>
 
 # usage
 
