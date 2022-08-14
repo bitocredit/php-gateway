@@ -1,0 +1,17 @@
+{
+    "name": "bitocredit/gateway-php",
+    "autoload": {
+        "psr-4": {
+            "Reza\\Bitocredit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "reza motahary",
+            "email": "reza.rz00980pp@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
