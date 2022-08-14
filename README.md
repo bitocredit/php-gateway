@@ -5,6 +5,7 @@
 
 ```php
     require "./vendor/autoload.php";
+    use Bitocredit\PhpGateway\ApiPhp;
     $api = new ApiPhp("your_token"); // replace your_token with your account token 
     $result = $api->createWallet("wallet_id"); // replace wallet_id with your wallet id
 ```
