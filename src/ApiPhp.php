@@ -8,7 +8,7 @@ class ApiPhp implements BitocreditInterface
 
     use Request;
     
-    public $baseURL = "";
+    public $baseURL = "https://bitocredit.com/api/";
     public $token = "";
 
     protected $header = [

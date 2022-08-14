@@ -1,5 +1,5 @@
 {
-    "name": "bitocredit/gateway-php",
+    "name": "bitocredit/php-gateway",
     "autoload": {
         "psr-4": {
             "Bitocredit\\PhpGateway\\": "src/"
