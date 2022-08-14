@@ -1,6 +1,6 @@
 <?php
 
-namespace Reza\Bitocredit;
+namespace Bitocredit\PhpGateway;
 
 
 class Api implements BitocreditInterface

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Reza\Bitocredit;
+namespace Bitocredit\PhpGateway;
 
 trait Request
 {

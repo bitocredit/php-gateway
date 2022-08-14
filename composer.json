@@ -2,7 +2,7 @@
     "name": "bitocredit/gateway-php",
     "autoload": {
         "psr-4": {
-            "Reza\\Bitocredit\\": "src/"
+            "Bitocredit\\PhpGateway\\": "src/"
         }
     },
     "authors": [

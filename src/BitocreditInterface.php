@@ -1,5 +1,5 @@
 <?php
-namespace Reza\Bitocredit;
+namespace Bitocredit\PhpGateway;
 
 
 interface BitocreditInterface
