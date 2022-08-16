@@ -13,6 +13,11 @@
       "Bitocredit\\PhpGateway\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Bitocredit\\PhpGateway\\Tests\\": "tests"
+    }
+  },
   "authors": [
     {
       "name": "reza motahary",

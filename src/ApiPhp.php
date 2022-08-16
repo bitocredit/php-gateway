@@ -1,24 +1,18 @@
 <?php
 
 namespace Bitocredit\PhpGateway;
-
+include_once __DIR__ . "/../config.php";
 
 class ApiPhp implements BitocreditInterface
 {
-
     use Request;
     
-    public $baseURL = "https://bitocredit.com/api/";
-    public $token = "";
+    public $baseURL = baseURL;
+    public $token = token;
 
     protected $header = [
         "Content-Type" => "application/json",
     ];
-
-    public function __construct(string $token)
-    {
-        $this->token = $token;
-    }
 
     public function createWallet($walletId)
     {
