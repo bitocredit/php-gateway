@@ -1,5 +1,6 @@
 {
     "name": "bitocredit/php-gateway",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Bitocredit\\PhpGateway\\": "src/"
