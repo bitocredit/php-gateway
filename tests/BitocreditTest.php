@@ -5,7 +5,6 @@ namespace Bitocredit\PhpGateway\Tests;
 use Bitocredit\PhpGateway\ApiPhp;
 use PHPUnit\Framework\TestCase;
 
-include_once  __DIR__ . "/../config.php";
 
 class BitocreditTest extends TestCase
 {

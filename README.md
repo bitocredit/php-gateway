@@ -2,11 +2,22 @@
 <h5>This library used for integrate with bitocredit api</h5>
 
 # usage
+copy config.sample.php file in your project and rename it to config.php
+<br>
+<br>
+fill the variables inside config.php file.
+<br>
+<br>
+and use library like this:
+
 
 ```php
-    require "./vendor/autoload.php";
+    include_once "your_project_path/config.php"; // path to your config.php file
+    
     use Bitocredit\PhpGateway\ApiPhp;
-    $api = new ApiPhp("your_token"); // replace your_token with your account token 
+    
+    // if you set variables inside config file . ypu don't have to pass constructor values 
+    $api = new ApiPhp("base_url" , "your_token");
     $result = $api->createWallet("wallet_id"); // replace wallet_id with your wallet id
 ```
 
