@@ -9,13 +9,14 @@ use PHPUnit\Framework\TestCase;
 class BitocreditTest extends TestCase
 {
     protected $api;
-    protected $token = token_test;
-    protected $transaction = transaction_test;
-    protected $wallet = wallet_address_test;
+    protected $token = "";
+    protected $transaction = "";
+    protected $wallet = "";
+    protected $baseURL_test = "";
 
     protected function setUp(): void
     {
-        $this->api = new ApiPhp($this->token);
+        $this->api = new ApiPhp($this->baseURL_test , $this->token);
     }
 
     public function testCreateWallet()
