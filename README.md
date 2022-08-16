@@ -12,6 +12,7 @@ and use library like this:
 
 
 ```php
+    require "vendor/autoload.php";
     include_once "your_project_path/config.php"; // path to your config.php file
     
     use Bitocredit\PhpGateway\ApiPhp;
