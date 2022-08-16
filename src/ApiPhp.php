@@ -28,7 +28,7 @@ class ApiPhp implements BitocreditInterface
 
     public function transactionFee()
     {
-        return $this->sendRequest("transaction/fee/" , "get" , $this->header);
+        return $this->sendRequest("transaction/fee/" , "get" , $this->header , [] , true);
     }
 
     public function transactionExampleCallback($transactionId)
