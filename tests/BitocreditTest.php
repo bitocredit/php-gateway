@@ -23,30 +23,38 @@ class BitocreditTest extends TestCase
     {
         $result = $this->api->createWallet("1");
         $this->assertSame($result['status'], 200);
+        $this->assertArrayHasKey("address" , $result);
     }
 
     public function testTransactionCheck()
     {
         $result = $this->api->transactionCheck($this->transaction, $this->wallet);
         $this->assertSame($result['status'], 200);
+        $this->assertArrayHasKey("message" , $result);
     }
 
     public function testTransactionRecovery()
     {
         $result = $this->api->transactionRecovery($this->transaction);
         $this->assertSame($result['status'], 200);
+        $this->assertArrayHasKey("message" , $result);
     }
 
     public function testTransactionExample()
     {
         $result = $this->api->transactionExampleCallback($this->transaction);
         $this->assertSame($result['status'], 200);
+        $this->assertArrayHasKey("message" , $result);
+        $this->assertArrayHasKey("address" , $result);
+        $this->assertArrayHasKey("transaction_id" , $result);
+        $this->assertIsNumeric($result['amount']);
     }
 
     public function testTransactionFee()
     {
         $result = $this->api->transactionFee();
         $this->assertSame($result['status'], 200);
+        $this->assertIsNumeric($result['fee']);
     }
 
 }
