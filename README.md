@@ -54,7 +54,7 @@ endpoint : https://bitocredit.com/api/transaction/check/{token}
 <br>
 
 ```php
-    $result = $api->transactionCheck("transaction_hash"); // replace transaction_hash with your transaction hash
+    $result = $api->transactionCheck("transaction_hash" , "wallet_address"); // replace transaction_hash and wallet_address with your transaction hash and wallet address
 ```
 
 # <a id="transactionrecovery">transactionRecovery</a>
