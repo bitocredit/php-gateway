@@ -17,7 +17,7 @@ and use library like this:
     
     use Bitocredit\PhpGateway\ApiPhp;
     
-    // if you set variables inside config file . ypu don't have to pass constructor values 
+    // if you set variables inside config file . you don't have to pass constructor values 
     $api = new ApiPhp("base_url" , "your_token");
     $result = $api->createWallet("wallet_id"); // replace wallet_id with your wallet id
 ```
