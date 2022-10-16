@@ -20,9 +20,10 @@ class ApiPhp implements BitocreditInterface
         $this->token = $token_const == null ? token : $token_const;
     }
 
-    public function createWallet($walletId)
+    public function createWallet($walletId , $network)
     {
         $data["wallet_id"] = $walletId;
+        $data["network"] = $network;
         return $this->sendRequest("create/wallet/" , "post" , $this->header , $data , true);
     }
 

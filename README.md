@@ -19,7 +19,7 @@ and use library like this:
     
     // if you set variables inside config file . you don't have to pass constructor values 
     $api = new ApiPhp("base_url" , "your_token");
-    $result = $api->createWallet("wallet_id"); // replace wallet_id with your wallet id
+    $result = $api->createWallet("wallet_id" , "network"); // replace wallet_id with your wallet id and set network type
 ```
 
 # methods
@@ -41,7 +41,7 @@ endpoint : https://bitocredit.com/api/create/wallet/{token}
 <br>
 
 ```php
-    $result = $api->createWallet("wallet_id"); // replace wallet_id with your wallet id
+    $result = $api->createWallet("wallet_id" , "network"); // replace wallet_id with your wallet id and set network type
 ```
 
 # <a id="transactioncheck">transactionCheck</a>

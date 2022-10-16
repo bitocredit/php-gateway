@@ -21,7 +21,7 @@ class BitocreditTest extends TestCase
 
     public function testCreateWallet()
     {
-        $result = $this->api->createWallet("1");
+        $result = $this->api->createWallet("1" , "tron");
         $this->assertSame($result['status'], 200);
         $this->assertArrayHasKey("address" , $result);
     }
