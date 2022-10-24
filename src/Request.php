@@ -42,7 +42,7 @@ trait Request
 
 
             // decode response and return
-            return json_decode($response, true) == null ? ['status' => "401", "error" => "check your config file"] : json_decode($response, true);
+            return json_decode($response) == null ? ['status' => "401", "error" => "check your config file"] : json_decode($response);
         } catch (\Exception $e) {
             return ['error' => $e->getMessage()];
         }
