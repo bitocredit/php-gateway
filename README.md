@@ -1,5 +1,5 @@
-<h3 align="center" >Bitocredit PHP Library</h3>
-<h5>This library used for integrate with bitocredit api</h5>
+<h3 align="center" ><a href="https://bitocredit.com/document/en/post/php" >Bitocredit PHP Library</a></h3>
+<h5>This library used for integrate with <a href="https://bitocredit.com/" >Bitocredit</a> api</h5>
 
 # usage
 copy config.sample.php file in your project and rename it to config.php
